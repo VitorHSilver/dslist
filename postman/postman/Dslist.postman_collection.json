@@ -4,7 +4,7 @@
 		"name": "Dslist",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "28558724",
-		"_collection_link": "https://cloudy-moon-444277.postman.co/workspace/Aula~f6e3142f-c22c-4b93-b105-5d90db9c12b1/collection/28558724-f5f4505d-6aea-4d28-b193-d0907ab30b27?action=share&creator=28558724&source=collection_link"
+		"_collection_link": "https://cloudy-moon-444277.postman.co/workspace/f6e3142f-c22c-4b93-b105-5d90db9c12b1/collection/28558724-f5f4505d-6aea-4d28-b193-d0907ab30b27?action=share&creator=28558724&source=collection_link"
 	},
 	"item": [
 		{
@@ -24,15 +24,120 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "List_example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/games",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"games"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Aug 2023 00:35:35 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Mass Effect Trilogy\",\n        \"year\": 2012,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/1.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Red Dead Redemption 2\",\n        \"year\": 2018,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/2.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"The Witcher 3: Wild Hunt\",\n        \"year\": 2014,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/3.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 4,\n        \"title\": \"Sekiro: Shadows Die Twice\",\n        \"year\": 2019,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/4.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 5,\n        \"title\": \"Ghost of Tsushima\",\n        \"year\": 2012,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/5.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 6,\n        \"title\": \"Super Mario World\",\n        \"year\": 1990,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/6.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Hollow Knight\",\n        \"year\": 2017,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/7.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Ori and the Blind Forest\",\n        \"year\": 2015,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/8.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Cuphead\",\n        \"year\": 2017,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/9.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Sonic CD\",\n        \"year\": 1993,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/10.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Game by id",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/games/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"games",
+						"2"
+					]
+				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "List_exemple",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/games/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"games",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Aug 2023 00:38:05 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"title\": \"Red Dead Redemption 2\",\n    \"year\": 2018,\n    \"genre\": \"Role-playing (RPG), Adventure\",\n    \"platforms\": \"XBox, Playstation, PC\",\n    \"score\": 4.7,\n    \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/2.png\",\n    \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\",\n    \"longDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorum illum placeat eligendi, quis maiores veniam. Incidunt dolorum, nisi deleniti dicta odit voluptatem nam provident temporibus reprehenderit blanditiis consectetur tenetur. Dignissimos blanditiis quod corporis iste, aliquid perspiciatis architecto quasi tempore ipsam voluptates ea ad distinctio, sapiente qui, amet quidem culpa.\"\n}"
+				}
+			]
 		},
 		{
 			"name": "Game lists",
@@ -51,7 +156,53 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "List_Game_exemple",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/lists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"lists"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Aug 2023 00:38:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Aventura e RPG\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Jogos de plataforma\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Games by lists",
@@ -72,15 +223,72 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "List_example",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/lists/2/games",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"lists",
+								"2",
+								"games"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 01 Aug 2023 00:39:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6,\n        \"title\": \"Super Mario World\",\n        \"year\": 1990,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/6.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 7,\n        \"title\": \"Hollow Knight\",\n        \"year\": 2017,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/7.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Ori and the Blind Forest\",\n        \"year\": 2015,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/8.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Cuphead\",\n        \"year\": 2017,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/9.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Sonic CD\",\n        \"year\": 1993,\n        \"imgUrl\": \"https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/10.png\",\n        \"shortDescription\": \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit esse officiis corrupti unde repellat non quibusdam! Id nihil itaque ipsum!\"\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "List replacement",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sourceIndex\" : 3,\r\n    \"destinationIndex\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8080/lists/2/games",
+					"raw": "http://localhost:8080/lists/2/replacement",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -89,7 +297,7 @@
 					"path": [
 						"lists",
 						"2",
-						"games"
+						"replacement"
 					]
 				}
 			},
