@@ -4,7 +4,7 @@
 # Sobre o projeto 
 About the project
 
-DSList Pro é uma API  construída durante a semana ** INTENSIVÃO JAVA SPRING ** , evento organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
+DSList Pro é uma API  construída durante a semana ** INTENSIVÃO JAVA SPRING ** , evento organizado pela [DevSuperior](https://devsuperior.com.br "Site da DevSuperior").
 
 A aplicação consiste em um sistema de coleção de jogos, onde os jogos são listados por tipos de avaliações , podendo ser alterados de ordem ao arrastar, mudando dinamicamente.
 
