@@ -1,14 +1,25 @@
-# dslist
+# DslistPro
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/VitorHSilver/dslist/blob/main/LICENSE) 
 
 # Sobre o projeto
 
-DSList Pro é uma API  construída durante **Semana INTENSIVÃO JAVA SPRING ** , evento organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
+DSList Pro é uma API  construída durante a semana ** INTENSIVÃO JAVA SPRING ** , evento organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
 
 A aplicação consiste em um sistema de coleção de jogos, onde os jogos são listados por tipos de avaliações , podendo ser alterados de ordem ao arrastar, mudando dinamicamente.
 
+
+No momento não obtive sucesso em encontrar uma plataforma de hospedagem em Nuvem para a praticidade da demostração da API
+Então abaixo tento detalhar por meio a prints das etapas.
+
 ## Postman
 ![Consulta](https://github.com/VitorHSilver/dslist/blob/main/assets/QueryPostman.PNG) 
+
+![Consulta](https://github.com/VitorHSilver/dslist/blob/main/assets/ConsultaH2.png) 
+
+## Após Alteração
+
+![ConsultaAposMudança](https://github.com/VitorHSilver/dslist/blob/main/assets/AfterQuery.jpg) 
+
 
 ## H2
 O H2 é um banco de dados em memória que permite todas as operações do CRUD
